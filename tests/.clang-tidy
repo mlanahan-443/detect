@@ -1,0 +1,5 @@
+# clang-tidy uses the nearest .clang-tidy up the directory tree. This one
+# keeps the root config and relaxes checks that Catch2's macros trip.
+InheritParentConfig: true
+Checks: >
+  -cppcoreguidelines-avoid-do-while

@@ -1,0 +1,4 @@
+# Formatter, roughly ruff-format for C++. Run: clang-format -i <files>
+BasedOnStyle: Google
+ColumnLimit: 100
+IncludeBlocks: Regroup

@@ -1,0 +1,8 @@
+# All build output lives here (one subfolder per preset)
+build/
+
+# clangd index
+.cache/
+
+# Local, machine-specific preset overrides
+CMakeUserPresets.json

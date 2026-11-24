@@ -1,0 +1,16 @@
+# Static analysis, roughly ruff-check for C++. Start broad, then turn off the
+# checks that are noise for numeric code.
+Checks: >
+  bugprone-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -readability-magic-numbers,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-identifier-length,
+  -bugprone-easily-swappable-parameters
+WarningsAsErrors: '*'
+# Only report problems in our own headers, not the standard library or Catch2.
+HeaderFilterRegex: '.*/include/detect/.*'
